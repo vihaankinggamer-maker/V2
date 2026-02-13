@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechOl - Premium Tech Design & Development Studio. Digital Excellence Redefined.">
+    <meta name="keywords" content="web design, development, digital agency, UI/UX, branding">
+    <meta name="author" content="Vihaan Sankhla - CEO, TechOl">
+    <title>TechOl | Digital Excellence Redefined</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Poppins:wght@300;400;600;700;800&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-sphere sphere-1"></div>
+        <div class="gradient-sphere sphere-2"></div>
+        <div class="gradient-sphere sphere-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">TechOl</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link highlight">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-label">WELCOME TO THE FUTURE</div>
+            <h1 class="hero-title">
+                <span class="glitch" data-text="TECHOL">TECHOL</span>
+            </h1>
+            <div class="hero-tagline">
+                <div class="line-animation"></div>
+                <h2>We Craft <span class="gradient-text">Digital Experiences</span></h2>
+                <div class="line-animation"></div>
+            </div>
+            <p class="hero-subtitle">Transform your vision into stunning, high-performance digital solutions that captivate audiences and drive extraordinary results</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                    <span>Start Your Project</span>
+                    <span class="btn-arrow">→</span>
+                </button>
+                <button class="btn btn-secondary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">
+                    <span>Explore Services</span>
+                </button>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-number">30+</div>
+                <div class="stat-label">Clients</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Years</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-container">
+            <div class="section-label">WHAT WE DO</div>
+            <h2 class="section-title">Services that <span class="gradient-text">Elevate</span> Your Brand</h2>
+            <p class="section-subtitle">We offer comprehensive web solutions tailored to your unique needs</p>
+
+            <div class="services-grid">
+                <!-- Service 1: Web Design -->
+                <div class="service-card glass-effect">
+                    <div class="service-header">
+                        <div class="service-icon">🎨</div>
+                        <h3>Web Design</h3>
+                    </div>
+                    <p class="service-description">Stunning, user-centric designs that capture your brand essence and engage visitors</p>
+                    <ul class="service-features">
+                        <li>✓ UI/UX Design</li>
+                        <li>✓ Responsive Layouts</li>
+                        <li>✓ Brand Identity</li>
+                        <li>✓ Prototyping</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2: Web Development -->
+                <div class="service-card glass-effect">
+                    <div class="service-header">
+                        <div class="service-icon">💻</div>
+                        <h3>Web Development</h3>
+                    </div>
+                    <p class="service-description">Fast, secure, scalable websites built with cutting-edge technologies</p>
+                    <ul class="service-features">
+                        <li>✓ React & Vue.js</li>
+                        <li>✓ Node.js Backend</li>
+                        <li>✓ Database Design</li>
+                        <li>✓ API Integration</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3: Mobile Apps -->
+                <div class="service-card glass-effect">
+                    <div class="service-header">
+                        <div class="service-icon">📱</div>
+                        <h3>Mobile Apps</h3>
+                    </div>
+                    <p class="service-description">Native and cross-platform mobile applications that users love</p>
+                    <ul class="service-features">
+                        <li>✓ iOS Development</li>
+                        <li>✓ Android Apps</li>
+                        <li>✓ Flutter/React Native</li>
+                        <li>✓ App Store Deployment</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4: E-Commerce -->
+                <div class="service-card glass-effect">
+                    <div class="service-header">
+                        <div class="service-icon">🛒</div>
+                        <h3>E-Commerce Solutions</h3>
+                    </div>
+                    <p class="service-description">Complete online stores with payment integration and inventory management</p>
+                    <ul class="service-features">
+                        <li>✓ Shopify Setup</li>
+                        <li>✓ WooCommerce</li>
+                        <li>✓ Payment Gateway</li>
+                        <li>✓ SEO Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5: Digital Marketing -->
+                <div class="service-card glass-effect">
+                    <div class="service-header">
+                        <div class="service-icon">📊</div>
+                        <h3>Digital Marketing</h3>
+                    </div>
+                    <p class="service-description">Data-driven strategies to boost your online presence and conversions</p>
+                    <ul class="service-features">
+                        <li>✓ SEO & SEM</li>
+                        <li>✓ Social Media</li>
+                        <li>✓ Content Strategy</li>
+                        <li>✓ Analytics</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6: Branding -->
+                <div class="service-card glass-effect">
+                    <div class="service-header">
+                        <div class="service-icon">✨</div>
+                        <h3>Brand Strategy</h3>
+                    </div>
+                    <p class="service-description">Complete visual identity and brand positioning for maximum impact</p>
+                    <ul class="service-features">
+                        <li>✓ Logo Design</li>
+                        <li>✓ Brand Guidelines</li>
+                        <li>✓ Color Psychology</li>
+                        <li>✓ Messaging Strategy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="section-container">
+            <div class="section-label">INVESTMENT</div>
+            <h2 class="section-title">Pricing & <span class="gradient-text">Plans</span></h2>
+            <p class="section-subtitle">Flexible packages designed for businesses of all sizes</p>
+
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card glass-effect">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="pricing-badge">BEST FOR STARTUPS</div>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">₹</span>
+                        <span class="amount">49,999</span>
+                        <span class="period">/mo</span>
+                    </div>
+                    <p class="pricing-description">Perfect for small businesses getting started online</p>
+                    
+                    <div class="pricing-features">
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>5-Page Website</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Mobile Responsive</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Basic SEO</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Contact Form</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>SSL Certificate</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>1 Month Support</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline">Get Started</button>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="pricing-card glass-effect featured">
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="pricing-badge featured-badge">MOST POPULAR</div>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">₹</span>
+                        <span class="amount">99,999</span>
+                        <span class="period">/mo</span>
+                    </div>
+                    <p class="pricing-description">Ideal for growing businesses wanting premium web presence</p>
+                    
+                    <div class="pricing-features">
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>15-Page Website</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Advanced UI/UX</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>SEO Optimization</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Blog Integration</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Analytics Setup</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>3 Months Support</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Performance Optimization</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Choose Plan</button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card glass-effect">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="pricing-badge">FOR CORPORATIONS</div>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">₹</span>
+                        <span class="amount">299,999</span>
+                        <span class="period">/mo</span>
+                    </div>
+                    <p class="pricing-description">Complete custom solutions for large-scale operations</p>
+                    
+                    <div class="pricing-features">
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Unlimited Pages</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>E-Commerce Ready</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Custom CMS</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Advanced Security</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>24/7 Support</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>API Integration</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Dedicated Manager</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Custom Development</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline">Contact Sales</button>
+                </div>
+            </div>
+
+            <!-- Service-Specific Pricing -->
+            <div class="service-pricing">
+                <h3>A La Carte Services</h3>
+                <div class="pricing-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Service</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>UI/UX Design</td>
+                                <td>Complete design system with wireframes and prototypes</td>
+                                <td>₹25,000 - ₹75,000</td>
+                            </tr>
+                            <tr>
+                                <td>Logo Design</td>
+                                <td>Professional logo with brand guidelines</td>
+                                <td>₹10,000 - ₹30,000</td>
+                            </tr>
+                            <tr>
+                                <td>Mobile App Development</td>
+                                <td>iOS or Android native app (per platform)</td>
+                                <td>₹150,000 - ₹500,000</td>
+                            </tr>
+                            <tr>
+                                <td>E-Commerce Setup</td>
+                                <td>Complete online store with payment gateway</td>
+                                <td>₹50,000 - ₹150,000</td>
+                            </tr>
+                            <tr>
+                                <td>SEO Optimization</td>
+                                <td>3-month SEO campaign (per month)</td>
+                                <td>₹15,000 - ₹40,000</td>
+                            </tr>
+                            <tr>
+                                <td>Social Media Marketing</td>
+                                <td>Monthly content creation & management</td>
+                                <td>₹20,000 - ₹50,000</td>
+                            </tr>
+                            <tr>
+                                <td>Website Migration</td>
+                                <td>Migrate existing website to new platform</td>
+                                <td>₹15,000 - ₹45,000</td>
+                            </tr>
+                            <tr>
+                                <td>Performance Audit</td>
+                                <td>Website analysis and optimization report</td>
+                                <td>₹5,000 - ₹15,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="section-container">
+            <div class="section-label">SHOWCASE</div>
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            <p class="section-subtitle">Recent work that showcases our expertise and creativity</p>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item glass-effect">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="portfolio-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Modern marketplace with advanced payment integration</p>
+                        <div class="portfolio-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item glass-effect">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="portfolio-info">
+                        <h3>SaaS Dashboard</h3>
+                        <p>Real-time analytics with data visualization</p>
+                        <div class="portfolio-tags">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>Charts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item glass-effect">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="portfolio-info">
+                        <h3>Mobile App Design</h3>
+                        <p>iOS & Android apps with seamless UX</p>
+                        <div class="portfolio-tags">
+                            <span>Figma</span>
+                            <span>Flutter</span>
+                            <span>UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item glass-effect">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <div class="portfolio-info">
+                        <h3>Brand Identity</h3>
+                        <p>Complete visual branding and design systems</p>
+                        <div class="portfolio-tags">
+                            <span>Logo</span>
+                            <span>Branding</span>
+                            <span>Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item glass-effect">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                    <div class="portfolio-info">
+                        <h3>Corporate Website</h3>
+                        <p>Enterprise website with CMS and automation</p>
+                        <div class="portfolio-tags">
+                            <span>WordPress</span>
+                            <span>SEO</span>
+                            <span>CMS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item glass-effect">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                    <div class="portfolio-info">
+                        <h3>Digital Marketing</h3>
+                        <p>Integrated campaigns with optimization</p>
+                        <div class="portfolio-tags">
+                            <span>SEO</span>
+                            <span>SEM</span>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <div class="section-label">ABOUT US</div>
+                    <h2 class="section-title">Who We <span class="gradient-text">Are</span></h2>
+                    <p>TechOl is a forward-thinking digital agency dedicated to creating exceptional digital experiences. Founded by Vihaan Sankhla, we combine strategic thinking with creative excellence and technical expertise.</p>
+                    <p>Based in Kota, Rajasthan, we work with innovative brands and ambitious entrepreneurs to transform their ideas into digital reality. Every project is an opportunity to push boundaries and create something extraordinary.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>30+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>8+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Satisfaction Rate</p>
+                        </div>
+                    </div>
+
+                    <div class="about-team">
+                        <h3>Leadership</h3>
+                        <div class="team-member">
+                            <h4>Vihaan Sankhla</h4>
+                            <p>Founder & CEO</p>
+                            <span>10+ years in digital innovation and strategic technology solutions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <div class="placeholder glass-effect">
+                        <span>TechOl Studio Kota</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <div class="section-label">GET IN TOUCH</div>
+            <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+            <p class="section-subtitle">Ready to bring your vision to life? Get in touch with us today</p>
+
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <form class="contact-form glass-effect" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <span class="form-focus"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                        <span class="form-focus"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your Phone">
+                        <span class="form-focus"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tell us about your project..." rows="5" required></textarea>
+                        <span class="form-focus"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </form>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="info-block glass-effect">
+                        <div class="info-icon">📧</div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:cvatechol@gmail.com">cvatechol@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-block glass-effect">
+                        <div class="info-icon">📱</div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <a href="tel:+919549558023">+91 9549558023</a>
+                        </div>
+                    </div>
+
+                    <div class="info-block glass-effect">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Kota, Rajasthan, India</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link glass-effect">LinkedIn</a>
+                        <a href="#" class="social-link glass-effect">Instagram</a>
+                        <a href="#" class="social-link glass-effect">Twitter</a>
+                        <a href="#" class="social-link glass-effect">Behance</a>
+                    </div>
+
+                    <div class="response-time glass-effect">
+                        <span class="status-dot"></span>
+                        <span>We typically respond within 24 hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TechOl</h4>
+                    <p>Premium digital design and development studio</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Web Design</a></li>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">E-Commerce</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:cvatechol@gmail.com">Email Us</a></li>
+                        <li><a href="tel:+919549558023">Call Us</a></li>
+                        <li><a href="#contact">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechOl. All rights reserved.</p>
+                <p>Founded & Led by Vihaan Sankhla | Based in Kota, Rajasthan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
